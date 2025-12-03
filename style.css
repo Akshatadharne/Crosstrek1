@@ -1,0 +1,68 @@
+/* Better simple CSS with alignments */
+body { 
+    font-family: Arial,sans-serif; 
+    padding-top:70px; 
+    background:#f7f9fb; 
+}
+
+.css-nav-toggle {
+     display:none; 
+    }
+
+.toggle-label { 
+    display:none; 
+    cursor:pointer; 
+}
+@media(max-width:768px){
+.toggle-label { 
+    display:block; 
+    padding:10px; 
+}
+
+.toggle-label .bar { 
+    width:22px; height:2px; 
+    background:#222; 
+    margin:4px 0; 
+    display:block; 
+}
+
+.nav-wrapper .nav { 
+    display:none; 
+    background:#fff; 
+    padding:10px; 
+    border-radius:6px; 
+}
+
+.css-nav-toggle:checked + .toggle-label + .nav-wrapper .nav { 
+    display:block;
+ }
+}
+
+.hero { 
+    background-size:cover; 
+    background-position:center; 
+    min-height:420px; 
+    color:white; 
+    position:relative; 
+}
+
+.overlay { 
+    background:rgba(0,0,0,0.4);
+    min-height:420px; 
+    display:flex; 
+    align-items:center; 
+}
+
+.hero-content h1 { 
+    font-size:42px; 
+    margin-bottom:10px; 
+}
+
+.features .feature-card,
+.thumbnail { 
+    background:#fff; 
+    padding:18px; 
+    border-radius:8px; 
+    box-shadow:0 4px 12px rgba(0,0,0,0.08); 
+    margin-bottom:20px; 
+}
